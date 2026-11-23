@@ -1,34 +1,34 @@
-# 衣脉 · 中西服饰文化数据库
+# 衣脉 · 中西服饰文化数据库｜整合交付版
 
-## 本地预览
-1. 下载并解压 ZIP。
-2. 打开 `costume-archive` 文件夹。
-3. 双击 `index.html`，用 Chrome 或 Edge 打开。
-4. 请保留 `assets` 文件夹，不要移动或重命名其中图片。
+## 已整合的栏目
+- 首页与总导航：`index.html`
+- 中国历代服饰：`china-history.html`
+- 历代男女服饰：`gender-costume.html`
+- 纺织工艺、刺绣、印染、纹样与色彩：`textile-patterns.html`
+- 中西名画服饰：`painting-costume.html`
+- 中国民族服饰图谱：`ethnic-costume.html`
+- 中西影视服饰：`film-costume.html`
+- 全球新中式设计案例：`global-new-chinese.html`
+- 服饰学者与人物研究：`people-research.html`
+- 全球服装设计师：`global-designers.html`
+- 五张水墨视觉素材：`assets/`
+- RSS资讯线索：`data/news.json`、`update_news.py`
+- 每日自动采集工作流：`.github/workflows/daily-update.yml`
 
-## 上传到 GitHub Pages
-1. 打开 GitHub，进入你的 `wangqiuna-portfolio` 仓库。
-2. 点击 `Add file` → `Upload files`。
-3. 解压 ZIP，进入 `costume-archive` 文件夹，把里面的文件和文件夹整体拖入上传区域（包括 `assets`、`data`、`.github`）。
-4. 在页面底部填写提交说明，例如 `Update costume archive design`，点击 `Commit changes`。
-5. 等待 Pages 部署完成后，打开：
-   `https://wangqiuna714.github.io/wangqiuna-portfolio/costume-archive/`
+## 一次性部署
+1. 下载并解压本 ZIP。
+2. 打开仓库 https://github.com/wangqiuna714/yimai-costume-archive
+3. 点击 Add file → Upload files。
+4. 把解压目录里的全部文件和文件夹上传，保留 `.github`、`assets`、`data` 目录结构。
+5. 已存在的同名文件选择覆盖，新增文件直接添加。
+6. Commit changes。
+7. Settings → Pages 保持 Deploy from a branch / main / /(root)。
+8. Actions 中确认 Daily costume culture RSS update 工作流出现；可手动运行 workflow_dispatch。
 
-## 更新说明
-- 已把你提供的五张水墨图加入网站：山水主视觉、墨线装饰、淡墨山景和花卉纹理。
-- 每日一课目前按日期轮换内置专题；这不等于每天自动撰写新研究文章。
-- 新闻区通过 GitHub Actions 定时采集公开 RSS 资讯线索，需回到原始来源核验。
-- 视觉水墨图不代表具体历史服饰实物。正式研究条目应补充有出处、版权许可的馆藏图像和学术来源。
-
-
-## 本次新增：历代服饰档案
-- 新增 `china-history.html`，包括先秦、秦汉、魏晋南北朝、隋唐五代、宋辽金西夏元、明代、清代专题。
-- 首页导航增加“历代服饰档案”入口。
-- 历史导读依据中国国家博物馆公开专题及学术资料整理；页面中的馆藏图片直接链接馆方页面，使用时请遵守馆方图片版权说明。
-- 发布更新：在 GitHub 仓库根目录上传并覆盖新的 `index.html`，同时新增 `china-history.html`，然后 Commit changes。
-
-
-## 本次新增：历代男女服饰专题
-- 新增 `gender-costume.html`，按秦汉、魏晋南北朝、隋唐、宋辽金元、明、清分别介绍女性与男性服饰观察点。
-- 首页导航增加“历代男女服饰”入口。
-- 清代宫廷服饰段落依据故宫博物院公开资料；纺织工艺延伸参考中国丝绸博物馆资料。内容是研究导读，不代替逐件文物考证。
+## 重要说明
+- RSS自动采集只提供资讯线索，可能因网站调整、限流或RSS不可用而漏采；每条信息都需要人工核验原文、日期和出处。
+- 每日专题的日期轮换不等于每天自动生成新的学术研究。
+- 水墨图片是网站视觉素材，不代表历史服饰实物。
+- 影视剧照、时装秀图片和博物馆藏品图片请从原始机构页面查看版权及授权条件，不要擅自复制公开。
+- 民族服饰需注明具体地域、支系、场景和来源，不能把一个款式概括为整个民族。
+- 页面文字为学习研究导读，正式论文引用应回到原始学术著作、馆藏档案和论文核验。

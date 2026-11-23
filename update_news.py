@@ -1,36 +1,44 @@
-import json, os, re
-from datetime import datetime, timezone, timedelta
-from urllib.request import Request, urlopen
-import xml.etree.ElementTree as ET
+#!/usr/bin/env python3
+# Daily RSS discovery feed. Collected entries are leads, not verified research.
+import json, re, urllib.request, xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
 
-QUERIES = [
-    '中国传统服饰 OR 汉服 OR 传统纺织工艺',
-    '民族服饰 OR 非遗服饰 OR 传统刺绣',
-    '新中式 时装 OR Chinese fashion design',
-    'fashion history museum exhibition costume collection',
-    'costume history textile museum fashion exhibition'
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / "data" / "news.json"
+FEEDS = [
+    ("V&A Museum", "https://www.vam.ac.uk/blog/category/fashion/feed"),
+    ("FashionUnited", "https://fashionunited.com/rss"),
+    ("Vogue Runway", "https://www.vogue.com/feed/fashion"),
 ]
+KEYWORDS = re.compile(r"fashion|costume|textile|embroidery|silk|museum|heritage|craft|Chinese|China|design|runway|服饰|服装|纺织|刺绣|非遗|新中式", re.I)
 
 def clean(s):
-    return re.sub(r'\\s+', ' ', s or '').strip()
+    return re.sub(r"\\s+", " ", re.sub(r"<[^>]+>", "", s or "")).strip()
 
-items=[]
-for query in QUERIES:
-    url='https://news.google.com/rss/search?q='+__import__('urllib.parse').parse.quote(query)+'&hl=zh-CN&gl=CN&ceid=CN:zh-Hans'
+def get_date(s):
+    try: return parsedate_to_datetime(s).date().isoformat()
+    except Exception: return ""
+
+items = []
+for source, url in FEEDS:
     try:
-        req=Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; YimaiArchive/1.0)'})
-        root=ET.fromstring(urlopen(req,timeout=20).read())
-        for node in root.findall('.//item')[:8]:
-            title=clean(node.findtext('title'))
-            link=clean(node.findtext('link'))
-            pub=clean(node.findtext('pubDate'))
-            source=clean(node.findtext('source')) or '公开资讯'
-            if title and link and not any(x['link']==link for x in items):
-                items.append({'title':title,'link':link,'date':pub,'source':source,'summary':'请打开原文核验报道时间、事实与图片版权。'})
-    except Exception as e:
-        print('Feed fetch failed:', query, str(e))
-items=items[:30]
-os.makedirs('data',exist_ok=True)
-with open('data/news.json','w',encoding='utf-8') as f:
-    json.dump(items,f,ensure_ascii=False,indent=2)
-print('Saved',len(items),'news items')
+        req = urllib.request.Request(url, headers={"User-Agent": "YimaiArchiveBot/1.0"})
+        with urllib.request.urlopen(req, timeout=20) as response:
+            root = ET.fromstring(response.read())
+        for node in root.findall(".//item")[:30]:
+            title, link = clean(node.findtext("title")), clean(node.findtext("link"))
+            summary, pub = clean(node.findtext("description")), clean(node.findtext("pubDate"))
+            if title and link and KEYWORDS.search(title + " " + summary):
+                items.append({"title": title[:240], "link": link, "summary": summary[:420],
+                              "source": source, "date": get_date(pub),
+                              "collected_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                              "verification": "待编辑核验原文"})
+    except Exception as exc:
+        print(f"[WARN] {source}: {exc}")
+unique = {x["link"]: x for x in items}
+result = sorted(unique.values(), key=lambda x: x.get("date", ""), reverse=True)[:80]
+OUT.parent.mkdir(parents=True, exist_ok=True)
+OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+print(f"Wrote {len(result)} RSS leads")
