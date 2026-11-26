@@ -1,0 +1,7 @@
+本次修复：
+1. 首页“名画与影视中的服饰文化”两张卡片已改为整卡可点击，分别进入 painting-costume.html 和 film-costume.html。
+2. 首页“西方服饰文化”三张卡片已改为整卡可点击，进入 western-costume.html 对应古典、中世纪、巴洛克/洛可可锚点。
+3. 民族服饰不再全部指向同一个 ethnic-costume.html。新增独立页面：
+   ethnic-miao.html、ethnic-tibetan.html、ethnic-uyghur.html、ethnic-kazakh.html、ethnic-dong.html、ethnic-yao.html、ethnic-li.html。
+4. 每个民族页面有各自独立的地域、结构、材料、纹样、工艺、穿着场景、研究方法和资料入口。概括性字段明确提示进一步核验，不虚构具体学者结论。
+5. 首页民族服饰卡片分别链接至独立页面；原有 ethnic-costume.html 苗族第一期研究页保留。
