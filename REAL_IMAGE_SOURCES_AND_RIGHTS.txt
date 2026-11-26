@@ -1,0 +1,20 @@
+衣脉真实图片替换说明（2026-11-26）
+
+本次将矢量服装示意图替换为真实的博物馆藏品、展览、历史图像或工艺现场照片。图片由来源网站托管，网页使用远程图片地址；若来源站限制外链或更换地址，图片可能无法显示。
+
+图片来源：
+- 汉代匈奴皮袍：河南博物院相关展品照片，Wikimedia Commons，CC0。https://commons.wikimedia.org/wiki/File:Xiongnu_Leather_Robe,_Han_period,_Henan_Provincial_Museum,_Zhengzhou.jpg
+- 唐代彩绘仕女俑：香港文化博物馆展品照片，Wikimedia Commons，CC0。https://commons.wikimedia.org/wiki/File:2015.05.18.114326_Court_lady_figurine_(Tang_Dynasty_618_-_907)_Heritage_Museum_Sha_Tin_Hong_Kong.jpg
+- 古希腊服饰：大英博物馆藏 chiton/himation 雕像照片。https://www.britishmuseum.org/collection/object/G_1973-0304-7
+- 中世纪服饰：15世纪会议编年史手抄本服饰图像，Wikimedia Commons。https://commons.wikimedia.org/wiki/File:Meister_der_Chronik_des_Konzils_von_Konstanz_001-cropped.jpg
+- 文艺复兴服装：西班牙16世纪宫廷服装，大都会艺术博物馆 Open Access。https://www.metmuseum.org/art/collection/search/98291
+- 洛可可礼服：V&A Collections。https://www.vam.ac.uk/collections/rococo
+- 苗族服饰：PICRYL 索引的上海博物馆相关展陈照片，页面标注 CC0；建议正式公开前核验原始档案。https://picryl.com/media/miao-nationality-guizhou-20th-century-4a88a5
+- 藏族服饰：China Daily，Exhibition showcases Tibetan folk culture in Lhasa，2023-06-23。https://en.chinaculture.org/a/202306/23/WS64953ec5a310bf8a75d6b47e_3.html
+- 维吾尔族服饰：北京服装学院相关展览报道。https://www.bift.edu.cn/xwgg/bfxw/ea3ecd9c4b1e4765a1713b86e32602a9.htm
+- 云锦织造：南京云锦博物馆织造现场，中国工艺美术学会报道。https://m.cnacs.net.cn/54/202505/7132.html
+- 刺绣服饰：清华大学艺术博物馆藏清代刺绣服装。https://www.artmuseum.tsinghua.edu.cn/en/cpsj_english/zlxx/zlhg/201806/t20180612_3163.shtml
+- 靛蓝染色：央广网传统染色现场报道。https://www.cnr.cn/yn/lyyn/20200821/t20200821_525222285.shtml
+- 新中式时装：南方+新中式设计报道。https://www.nfnews.com/content/xovKKYJLyJ.html
+
+版权提醒：CC0 或 Open Access 条目可按授权条件使用；China Daily、北京服装学院、清华大学艺术博物馆、V&A 及媒体报道图片的公开展示、转载或商业使用，应遵守各自版权条款，必要时取得授权。来源署名不等于自动获得转载许可。
