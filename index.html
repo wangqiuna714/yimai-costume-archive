@@ -42,24 +42,21 @@
 .news-source-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 .news-source-links a{display:inline-block;border:1px solid #d9cfbf;padding:8px 12px;color:#46594c;background:rgba(255,253,248,.72);font-size:12px}
 
-/* Matched subject images and real card links */
 
-.linked-card{display:block;color:inherit;text-decoration:none;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
-.linked-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(55,45,30,.12)}
-.linked-card:focus-visible{outline:2px solid #963f32;outline-offset:3px}
-.card-more{display:inline-block;margin-top:10px;color:#963f32;font-size:12px;border-bottom:1px solid #c99b88;padding-bottom:3px}
-.linked-card img{width:100%;height:220px;display:block;object-fit:cover;background:#eee8dc}
-
-
-/* Final hero contrast correction */
-header.hero .eyebrow{color:#8f3e32!important;opacity:1!important;text-shadow:none!important;font-weight:700!important}
-header.hero h1{color:#292720!important;opacity:1!important;text-shadow:0 1px 8px rgba(255,253,248,.65)!important}
-header.hero .sub{color:#405447!important;opacity:1!important;text-shadow:none!important}
-header.hero p{color:#343129!important;opacity:1!important;text-shadow:0 1px 7px rgba(255,253,248,.72)!important}
-header.hero .actions .btn{color:#292720!important;background:rgba(255,253,248,.88)!important;border-color:#46594c!important}
-header.hero .actions .btn.primary{color:#fff!important;background:#963f32!important;border-color:#963f32!important}
-header.hero .hero-inner{background:transparent!important;border:0!important;box-shadow:none!important}
-
+.hero .eyebrow,.hero .kicker{color:#963f32!important;opacity:1!important}
+.hero h1{color:#292720!important;opacity:1!important;text-shadow:0 1px 8px rgba(255,253,248,.65)!important}
+.hero .sub{color:#46594c!important;opacity:1!important}
+.hero p{color:#38352e!important;opacity:1!important;text-shadow:0 1px 8px rgba(255,253,248,.65)!important}
+.hero .btn{color:#292720!important;background:rgba(255,253,248,.85)!important;border-color:#46594c!important}
+.hero .btn.primary{color:#fff!important;background:#963f32!important;border-color:#963f32!important}
+.linked-card{display:block;color:inherit;text-decoration:none;cursor:pointer;transition:transform .18s,box-shadow .18s}
+.linked-card:hover,.scholar-link:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(55,45,30,.12)}
+.linked-card:focus-visible,.scholar-link:focus-visible{outline:2px solid #963f32;outline-offset:3px}
+.linked-card img{width:100%;height:220px;object-fit:cover;display:block;background:#eee8dc}
+.card-more{display:inline-block;margin-top:12px;color:#963f32;font-size:12px;border-bottom:1px solid #c99b88;padding-bottom:3px}
+.scholar-link{display:block;background:#fffdf8;border:1px solid var(--line);padding:22px;color:inherit;text-decoration:none;transition:transform .18s,box-shadow .18s}
+.scholar-link h3{font-size:19px;font-weight:500;margin:12px 0}
+.scholar-link p{font-size:13px;line-height:2;color:#5d584f}
 </style></head>
 <body>
 <div class="top"><span>YIMAI · COSTUME CULTURE ARCHIVE</span><span>服饰 · 历史 · 艺术 · 设计</span></div>
@@ -71,29 +68,26 @@ header.hero .hero-inner{background:transparent!important;border:0!important;box-
 <article class="card searchable"><img src="assets/ink-flower.png"><div class="card-body"><span class="tag">中国服装史</span><h3>先秦至秦汉：深衣与衣冠制度</h3><p>从上衣下裳到深衣形制，理解早期华夏服饰结构、礼制观念与审美秩序。</p><div class="meta">历史时期 · 先秦 / 秦汉</div></div></article>
 <article class="card searchable"><img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">中国服装史</span><h3>唐代：开放气象与多元审美</h3><p>襦裙、半臂、胡服及妆饰风尚，折射唐代城市生活、对外交流与女性审美。</p><div class="meta">历史时期 · 隋唐</div></div></article>
 <article class="card searchable"><img src="assets/wide-landscape.png"><div class="card-body"><span class="tag">西方服装史</span><h3>欧洲文艺复兴：服装与权力肖像</h3><p>从轮廓、织物、袖型与珠宝，观察宫廷文化、财富展示和人体观念的变化。</p><div class="meta">历史时期 · 14—16世纪</div></div></article>
-<article class="card searchable"><img src="https://www.merit-times.com.tw/news_pic/20220727/C20220726214318060.jpg"><div class="card-body"><span class="tag">当代设计</span><h3>新中式：传统元素的当代转译</h3><p>研究立领、盘扣、斜襟、传统面料与现代廓形如何形成新的设计语言。</p><div class="meta">设计专题 · 当代</div></div></article>
+<article class="card searchable"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">当代设计</span><h3>新中式：传统元素的当代转译</h3><p>研究立领、盘扣、斜襟、传统面料与现代廓形如何形成新的设计语言。</p><div class="meta">设计专题 · 当代</div></div></article>
 <article class="card searchable"><img src="https://images.unsplash.com/photo-1455390582262-044c6125b5e5?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">传统工艺</span><h3>织绣：从纹样到材料语言</h3><p>认识刺绣、织锦、缂丝、印染等工艺的材料特征、制作逻辑与审美价值。</p><div class="meta">工艺专题 · 纺织技艺</div></div></article>
 <article class="card searchable"><img src="assets/ink-flow.png"><div class="card-body"><span class="tag">服饰研究</span><h3>服饰中的色彩与社会象征</h3><p>从中国传统色名与西方历史色彩体系，理解染料、等级、宗教与时尚之间的关系。</p><div class="meta">专题研究 · 色彩文化</div></div></article>
 </div><p id="search-status" class="desc"></p></section>
 <section class="section" id="china"><div class="section-head"><div><div class="kicker">CHINESE COSTUME HISTORY</div><h2>中国传统服饰 · 朝代脉络</h2></div><div class="desc">从形制、材料、色彩、纹样、礼制五个维度建立认知</div></div><div class="timeline"><a class="timeitem" href="china-history.html#preqin"><b>先秦</b><p>上衣下裳、深衣、冠礼与礼制初步形成。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#qinhan"><b>秦汉</b><p>曲裾、直裾、袍服发展，冠服制度逐步系统化。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#weijin"><b>魏晋南北朝</b><p>宽衣博带、褒衣博袖，民族交流影响服饰风貌。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#suitang"><b>隋唐</b><p>襦裙、圆领袍、胡服风尚，呈现开放多元气象。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#songyuan"><b>宋元</b><p>宋代趋于清雅简约；元代服饰体现多民族交融。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#ming"><b>明</b><p>袄裙、马面裙、补服与织绣工艺发展。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#qing"><b>清</b><p>旗装、马褂、朝服及满汉服饰文化互动。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="global-new-chinese.html"><b>近现代</b><p>旗袍、中山装、西式剪裁与现代服装工业。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="global-new-chinese.html"><b>当代</b><p>汉服复兴、非遗活化与新中式设计探索。</p><span class="timeitem-more">进入专题 →</span></a><a class="timeitem" href="china-history.html#research"><b>研究方法</b><p>结合出土实物、图像、文献、织物与版型复原。</p><span class="timeitem-more">进入专题 →</span></a></div></section>
 <section class="section" id="west"><div class="section-head"><div><div class="kicker">WESTERN COSTUME HISTORY</div><h2>西方服饰文化 · 历史脉络</h2></div><div class="desc">古典文明、宗教、宫廷、工业化与现代时尚</div></div><div class="grid">
-<a class="card linked-card" href="https://www.metmuseum.org/essays/ancient-greek-dress" target="_blank" rel="noopener"><img src="https://www.merit-times.com.tw/news_pic/20220727/C20220726214318060.jpg" alt="古典希腊罗马服饰复原展示"><div class="card-body"><span class="tag">古典时代</span><h3>古希腊与古罗马</h3><p>希顿、希玛申、托加等披挂式服装，关注垂坠、比例与公民身份。</p><span class="card-more">查看古典服饰资料 →</span></div></a>
-<a class="card linked-card" href="https://www.theartnewspaper.com/2019/01/03/close-study-of-fashions-in-medieval-manuscripts-is-key-to-understanding-interactions-of-literature-and-dress" target="_blank" rel="noopener"><img src="https://cdn.sanity.io/images/cxgd3urn/production/24d5ae042963c25317155a1f1430d23f33230ce7-2723x3615.jpg?auto=format&fit=crop&h=720&q=85&rect=223%2C1124%2C2278%2C1367&w=1200" alt="中世纪手抄本人物服饰"><div class="card-body"><span class="tag">中世纪</span><h3>宗教与等级秩序</h3><p>服装受宗教伦理、封建身份和行会规范影响，层叠结构与装饰逐渐丰富。</p><span class="card-more">查看中世纪服饰资料 →</span></div></a>
-<a class="card linked-card" href="https://www.selvedge.org/products/belgium-hasselt-hasselt-s-fashion-museum" target="_blank" rel="noopener"><img src="https://www.selvedge.org/cdn/shop/files/evenbeeld-pieceMontee-ModemuseumHasselt-RococoReboot-62.jpg?v=1769002551&width=1946" alt="十八世纪洛可可礼服展览"><div class="card-body"><span class="tag">近代早期</span><h3>巴洛克与洛可可</h3><p>宫廷服饰以华丽织物、蕾丝、刺绣、裙撑和装饰性轮廓表达权力与品位。</p><span class="card-more">查看洛可可服饰资料 →</span></div></a>
+<div class="card"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">古典时代</span><h3>古希腊与古罗马</h3><p>希顿、希玛申、托加等披挂式服装，关注垂坠、比例与公民身份。</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">中世纪</span><h3>宗教与等级秩序</h3><p>服装受宗教伦理、封建身份和行会规范影响，层叠结构与装饰逐渐丰富。</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">近代早期</span><h3>巴洛克与洛可可</h3><p>宫廷服饰以华丽织物、蕾丝、刺绣、裙撑和装饰性轮廓表达权力与品位。</p></div></div>
 </div></section>
 <section class="section" id="compare"><div class="section-head"><div><div class="kicker">EAST MEETS WEST</div><h2>中西服饰文化对照</h2></div><div class="desc">不是简单比较谁更先进，而是理解不同文明的审美逻辑</div></div><table class="compare"><thead><tr><th>观察维度</th><th>中国传统服饰（概括）</th><th>西方历史服饰（概括）</th><th>研究切入点</th></tr></thead><tbody><tr><td>结构与造型</td><td>平面裁剪传统深厚，重视衣片关系、交领与衣身空间。</td><td>立体塑形传统突出，历史上逐步发展胸衣、裙撑与合体剪裁。</td><td>比较人体观念、结构逻辑与活动空间。 <a class="compare-link" href="china-history.html#research">查看专题 →</a></td></tr><tr><td>礼仪与身份</td><td>冠服、补服、色彩和纹样常与礼制等级相关。</td><td>宫廷法令、阶层消费、宗教与职业规范影响穿着。</td><td>研究服装如何表达权力、身份与秩序。 <a class="compare-link" href="gender-costume.html">查看专题 →</a></td></tr><tr><td>材料与工艺</td><td>丝织、织锦、刺绣、缂丝、蓝印花布等。</td><td>羊毛呢、亚麻、丝绸、蕾丝、提花织物与印花等。</td><td>从材料贸易、技术传播与工艺史展开。 <a class="compare-link" href="textile-patterns.html">查看专题 →</a></td></tr><tr><td>审美倾向</td><td>含蓄、意象、纹样寓意与整体气韵在不同时期呈现不同侧重。</td><td>比例、轮廓、装饰和身体塑形在不同历史阶段不断变化。</td><td>避免用单一标签概括漫长历史。 <a class="compare-link" href="painting-costume.html">查看专题 →</a></td></tr></tbody></table></section>
-<section class="section" id="art"><div class="section-head"><div><div class="kicker">COSTUME IN ART & SCREEN</div><h2>名画与影视中的服饰文化</h2></div><div class="desc">把艺术作品当作图像史料，同时辨析艺术加工与历史真实</div></div><div class="grid two">
-<a class="card linked-card" href="painting-costume.html" target="_self"><img src="https://digitalarchive.npm.gov.tw/opendata/Image/GetImage?imageId=1226543&randomCode=159468210" alt="仇英清明上河图中的人物与服饰"><div class="card-body"><span class="tag">中西名画</span><h3>从肖像画读懂服装</h3><p>从《清明上河图》等人物图像观察领型、袖型、织物、首饰、发式与身份，并与实物、文献互证。</p><span class="card-more">进入名画服饰档案 →</span></div></a>
-<a class="card linked-card" href="film-costume.html" target="_self"><img src="https://k.sinaimg.cn/n/spider20250603/433/w1080h953/20250603/6f20-cac46305d682fa2263580943690d6aba.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="西藏非遗博物馆传统服饰展陈"><div class="card-body"><span class="tag">电影与电视剧</span><h3>影视服装：考据、叙事与美术设计</h3><p>分析时代背景、人物弧光、色彩叙事、服装材质和造型变化，区分历史复原、戏剧化改编与架空设计。</p><span class="card-more">进入影视服饰档案 →</span></div></a>
+<section class="section" id="art"><div class="section-head"><div><div class="kicker">COSTUME IN ART & SCREEN</div><h2>名画与影视中的服饰文化</h2></div><div class="desc">把艺术作品当作图像史料，同时辨析艺术加工与历史真实</div></div><div class="grid two"><div class="card"><img src="assets/ink-flower.png"><div class="card-body"><span class="tag">中西名画</span><h3>从肖像画读懂服装</h3><p>观察画中人物的领型、袖型、面料光泽、褶皱、首饰、发式与姿态。建议建立“作品—年代—人物身份—服饰细节—史料互证”记录表。</p></div></div><div class="card"><img src="assets/ink-flow.png"><div class="card-body"><span class="tag">电影与电视剧</span><h3>影视服装：考据、叙事与美术设计</h3><p>分析时代背景、人物弧光、色彩叙事、服装材质和造型变化。区分历史复原、戏剧化改编与架空设计。</p></div></div></div></section>
+<section class="section" id="ethnic"><div class="section-head"><div><div class="kicker">ETHNIC COSTUME ATLAS</div><h2>中国民族服饰 · 每日认识一个民族</h2></div><div class="desc">尊重地域差异、支系差异与当代生活，不把民族服饰简化成舞台符号</div></div><div class="grid"><div class="card"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">民族服饰专题</span><h3>苗族服饰</h3><p>可从银饰、刺绣、蜡染、百褶裙、支系差异与节庆穿着切入，重点记录工艺和纹样的地方性。</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">民族服饰专题</span><h3>藏族服饰</h3><p>结合高原气候、牧业生活、地域材料、袍服结构及不同地区的穿着方式进行研究。</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">民族服饰专题</span><h3>维吾尔族服饰</h3><p>关注长袍、艾德莱斯绸、花帽、刺绣与绿洲城市生活中的服饰审美。</p></div></div></div></section>
+<section class="section" id="craft"><div class="section-head"><div><div class="kicker">PATTERN · COLOR · TEXTILE</div><h2>传统纹样 · 中国色彩 · 纺织工艺</h2></div><div class="desc">为服装设计建立可检索、可转化的灵感素材库</div></div><div class="grid">
+<a class="card linked-card" href="textile-patterns.html#pattern"><img src="assets/silk-embroidery.png" alt="传统丝绸刺绣花卉纹样示意图"><div class="card-body"><span class="tag">纹样数据库</span><h3>云纹、龙凤、花卉与几何纹</h3><p>从构图、单元纹样、连续方式、寓意语境与刺绣、织造适配关系研究传统纹样。</p><span class="card-more">进入纹样研究 →</span></div></a>
+<a class="card linked-card" href="textile-patterns.html#color"><img src="assets/indigo-dyeing.png" alt="靛蓝染色工艺示意图"><div class="card-body"><span class="tag">色彩数据库</span><h3>中国传统色与配色体系</h3><p>从天然染料、媒染、色相层次与历史使用场景理解传统色彩。</p><span class="card-more">进入色彩研究 →</span></div></a>
+<a class="card linked-card" href="textile-patterns.html#weaving"><img src="assets/loom-brocade-detail.png" alt="木织机织造锦缎示意图"><div class="card-body"><span class="tag">纺织工艺</span><h3>织、染、绣、缂、印</h3><p>按原料、工具、工序、组织结构和地域传承拆解织锦、缂丝、刺绣与印染。</p><span class="card-more">进入工艺研究 →</span></div></a>
 </div></section>
-<section class="section" id="ethnic"><div class="section-head"><div><div class="kicker">ETHNIC COSTUME ATLAS</div><h2>中国民族服饰 · 每日认识一个民族</h2></div><div class="desc">尊重地域差异、支系差异与当代生活，不把民族服饰简化成舞台符号</div></div><div class="grid">
-<a class="card linked-card" href="ethnic-costume.html" target="_self"><img src="https://static.jstv.com/gather/hl_dp/20210916/14/10832879026172187130.png" alt="苗族传统服饰与银饰展示"><div class="card-body"><span class="tag">民族服饰专题 · 西南</span><h3>苗族服饰</h3><p>从银饰、刺绣、蜡染、百褶裙和具体支系入手，记录节庆盛装与日常服饰的差异。</p><span class="card-more">进入苗族服饰档案 →</span></div></a>
-<a class="card linked-card" href="ethnic-costume.html" target="_self"><img src="https://www.tibetmuseum.com.cn/uploadfiles/exhibit_new/20220804/202208041522103049.jpg" alt="西藏博物馆传统藏族服饰展品"><div class="card-body"><span class="tag">民族服饰专题 · 青藏高原</span><h3>藏族服饰</h3><p>结合高原气候、地域材料、藏袍结构、邦典与不同地区的穿着方式进行研究。</p><span class="card-more">进入藏族服饰档案 →</span></div></a>
-<a class="card linked-card" href="ethnic-costume.html" target="_self"><img src="https://www.bift.edu.cn/images/2023-03/ee41423e668248e0891ff00ef237c00b.jpg" alt="维吾尔族艾德莱斯绸传统服饰展品"><div class="card-body"><span class="tag">民族服饰专题 · 西北</span><h3>维吾尔族服饰</h3><p>关注艾德莱斯绸、花帽、长袍、刺绣与新疆不同绿洲地区的服饰审美。</p><span class="card-more">进入维吾尔族服饰档案 →</span></div></a>
-</div></section>
-<section class="section" id="craft"><div class="section-head"><div><div class="kicker">PATTERN · COLOR · TEXTILE</div><h2>传统纹样 · 中国色彩 · 纺织工艺</h2></div><div class="desc">为服装设计建立可检索、可转化的灵感素材库</div></div><div class="grid"><div class="card"><img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7adde?auto=format&fit=crop&w=900&q=80"><div class="card-body"><span class="tag">纹样数据库</span><h3>云纹、龙凤、花卉与几何纹</h3><p>记录纹样名称、时代、寓意、构成方式、适用工艺及现代设计转化方向。</p></div></div><div class="card"><img src="assets/ink-mountains.png"><div class="card-body"><span class="tag">色彩数据库</span><h3>中国传统色与配色体系</h3><p>建立色名、色值、文献出处、历史使用场景与现代搭配方案的关联。</p></div></div><div class="card"><img src="assets/ink-mountains.png"><div class="card-body"><span class="tag">纺织工艺</span><h3>织、染、绣、缂、印</h3><p>从原料、工具、工序、地域传承、非遗保护与当代应用理解传统工艺。</p></div></div></div></section>
 <section class="section" id="newchinese"><div class="section-head"><div><div class="kicker">NEW CHINESE DESIGN WATCH</div><h2>新中式设计 · 全球观察</h2></div><div class="desc">传统文化如何进入当代服装、品牌、秀场与国际语境</div></div><div class="feature"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85" alt="当代时装造型"><div><span class="tag">设计研究专题</span><h3>从传统符号到当代设计语言</h3><p>关注国内外设计师如何运用中式廓形、盘扣、立领、丝绸、刺绣、东方色彩与传统纹样。研究时不只看“像不像中国风”，还要分析设计师、品牌、系列年份、具体元素来源、工艺和市场语境。</p><p>每条案例建议记录：品牌/设计师、国家、系列名称、发布年份、灵感来源、服装细节、传统元素转译方式、原始出处。</p><a class="smalllink" href="https://www.metmuseum.org/art/collection" target="_blank" rel="noopener">参阅大都会艺术博物馆馆藏</a></div></div></section>
-<section class="section" id="scholars"><div class="section-head"><div><div class="kicker">RESEARCH & SCHOLARSHIP</div><h2>学者观点 · 研究成果</h2></div><div class="desc">以论文、博物馆研究、考古报告和学术著作为依据</div></div><div class="grid two"><div class="card-body" style="background:#fffdf8;border:1px solid var(--line)"><span class="tag">研究方法</span><h3>服饰史研究如何建立证据链？</h3><p>将传世服装、墓葬出土纺织品、壁画、绘画、文献记载和工艺实验相互印证。每条结论标注作者、出处、年代、研究对象与证据类型，不把网络流行说法当作学术定论。</p></div><div class="card-body" style="background:#fffdf8;border:1px solid var(--line)"><span class="tag">学术资料入口</span><h3>持续追踪学者与机构研究</h3><p>重点关注服装史、纺织考古、博物馆学、非遗保护、艺术史与设计史领域的学者和研究机构。后续数据库将按“学者—论文/著作—核心观点—证据—设计启发”整理。</p></div></div></section>
+<section class="section" id="scholars"><div class="section-head"><div><div class="kicker">RESEARCH & SCHOLARSHIP</div><h2>学者观点 · 研究成果</h2></div><div class="desc">以论文、博物馆研究、考古报告和学术著作为依据</div></div><div class="grid two"><a class="card-body scholar-link" href="people-research.html"><span class="tag">研究方法</span><h3>服饰史研究如何建立证据链？</h3><p>将传世服装、墓葬出土纺织品、壁画、绘画、文献记载和工艺实验相互印证。每条结论标注作者、出处、年代、研究对象与证据类型，不把网络流行说法当作学术定论。</p><span class="card-more">进入研究方法与学者档案 →</span></a><a class="card-body scholar-link" href="people-research.html"><span class="tag">学术资料入口</span><h3>持续追踪学者与机构研究</h3><p>查看沈从文、孙机、周锡保等服饰史研究者，以及设计师、影视服装创作者的代表成果、研究方法与原始出处。</p><span class="card-more">进入人物与学术研究 →</span></a></div></section>
 <section class="section" id="news"><div class="section-head"><div><div class="kicker">LATEST UPDATES</div><h2>中国传统服饰与全球时尚动态</h2></div><div class="desc">自动抓取公开资讯标题；重要内容需回到原文核验</div></div><div class="news-list" id="news-list"><div class="empty">首次部署后，GitHub Actions 将定时生成资讯列表。这里也会保留专题档案与来源链接。</div></div></section>
 <section class="section"><div class="section-head"><div><div class="kicker">REFERENCE DESK</div><h2>权威资料与馆藏入口</h2></div></div><div class="sources"><p><a href="https://www.metmuseum.org/art/collection" target="_blank">The Metropolitan Museum of Art 大都会艺术博物馆馆藏</a>　·　<a href="https://www.vam.ac.uk/collections/fashion" target="_blank">V&A 维多利亚与艾尔伯特博物馆时尚馆藏</a></p><p><a href="https://www.europeana.eu/" target="_blank">Europeana 欧洲数字文化遗产平台</a>　·　<a href="https://www.si.edu/collections" target="_blank">Smithsonian Institution 史密森学会馆藏</a></p><p><a href="https://www.dpm.org.cn/" target="_blank">故宫博物院</a>　·　<a href="https://www.chnmuseum.cn/" target="_blank">中国国家博物馆</a>　·　<a href="https://www.ihchina.cn/" target="_blank">中国非物质文化遗产网</a></p><p>说明：网站中的示例图为视觉占位素材，不代表对应历史服饰的考古复原或馆藏实物。正式研究条目应替换为可核验的博物馆藏品图、授权图片或明确标注来源的历史图像。</p></div></section>
 </main><footer><div style="font-size:20px;letter-spacing:4px">衣脉 · 中西服饰文化数据库</div><div>让服饰成为理解历史、艺术、技术与社会生活的一把钥匙。</div><div>个人研究与学习资料库 · 持续更新 · 尊重史料与版权</div></footer>
@@ -147,23 +141,4 @@ async function loadNews(){
 }
 loadNews();
 </script>
-
-<script id="YIMAI_IMAGE_FAILSAFE">
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('main img').forEach(function(img){
-    img.addEventListener('error',function(){
-      img.style.display='none';
-      const holder=img.parentElement;
-      if(holder && !holder.querySelector('.image-source-note')){
-        const note=document.createElement('div');
-        note.className='image-source-note';
-        note.textContent='图片来源暂不可用 · 点击查看专题资料';
-        note.style.cssText='min-height:150px;display:flex;align-items:center;justify-content:center;background:#eee8dc;color:#756d60;font-size:12px;letter-spacing:1px;';
-        holder.insertBefore(note,holder.firstChild);
-      }
-    });
-  });
-});
-</script>
-
 </body></html>
