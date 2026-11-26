@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" fill="#f3efe8"/>
+<rect x="0" y="0" width="1200" height="720" fill="url(#g)" opacity="0.25"/>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6c7c8c"/><stop offset="100%" stop-color="#b4796b"/></linearGradient>
+</defs>
+<g opacity="0.18" stroke="#6c7c8c" fill="none">
+  <path d="M80 560 C240 460, 360 460, 520 560" stroke-width="4"/>
+  <path d="M680 170 C810 80, 960 80, 1090 170" stroke-width="4"/>
+  <circle cx="180" cy="170" r="70" stroke-width="3"/>
+  <circle cx="1000" cy="560" r="90" stroke-width="3"/>
+  <path d="M160 250 L260 320 L190 420 L90 350 Z" stroke-width="3"/>
+  <path d="M940 220 L1070 300 L980 430 L850 350 Z" stroke-width="3"/>
+</g>
+<g>
+  <text x="88" y="112" font-size="28" font-family="Georgia, serif" letter-spacing="8" fill="#b4796b">ETHNIC COSTUME ATLAS</text>
+  <text x="88" y="330" font-size="92" font-family="Noto Serif SC, SimSun, serif" fill="#292720">苗族服饰</text>
+  <text x="92" y="402" font-size="34" font-family="Noto Serif SC, SimSun, serif" fill="#6c7c8c">刺绣 · 银饰 · 蜡染</text>
+  <line x1="92" y1="438" x2="420" y2="438" stroke="#6c7c8c" stroke-width="2" opacity="0.65"/>
+  <text x="92" y="500" font-size="26" font-family="Noto Serif SC, SimSun, serif" fill="#5d584f">专题引导卡 · 进入页面查看研究关键词与资料入口</text>
+</g>
+</svg>
