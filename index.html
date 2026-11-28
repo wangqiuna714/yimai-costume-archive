@@ -23,15 +23,12 @@
 #daily-img{width:100%;height:100%;min-height:300px;object-fit:contain;background:#eee9df}
 
 
-/* Align the daily article with its matching Tang ruqun illustration */
-.feature{grid-template-columns:1.1fr 1fr;gap:25px;align-items:center}
-.daily-visual{min-width:0;background:#eee9df}
-.daily-visual img{display:block;width:100%;height:330px;object-fit:cover;object-position:center 36%;background:#eee9df}
-.daily-image-credit{font-size:11px;line-height:1.8;color:#625b50;background:#fffdf8;padding:9px 12px;border-top:1px solid var(--line)}
-.daily-article{min-width:0}
-.daily-article h3{font-size:26px;font-weight:500;line-height:1.5;margin:10px 0 14px;color:var(--ink)}
-.daily-article p{font-size:14px;line-height:2;color:#5f5b52;margin:0 0 12px}
-@media(max-width:800px){.feature{grid-template-columns:1fr}.daily-visual img{height:auto;max-height:420px;object-fit:contain}}
+/* Scholar cards: full-card clickable hit area */
+#scholars .scholar-link{display:block;position:relative;z-index:1;width:100%;min-height:220px;padding:22px;background:#fffdf8;border:1px solid var(--line);color:inherit;text-decoration:none;cursor:pointer;pointer-events:auto}
+#scholars .scholar-link *{pointer-events:none}
+#scholars .scholar-link:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(55,45,30,.12)}
+#scholars .scholar-link:focus-visible{outline:2px solid #963f32;outline-offset:3px}
+#scholars .scholar-link .card-more{display:inline-block;margin-top:12px;color:#963f32;border-bottom:1px solid #c99b88;padding-bottom:3px;font-size:12px}
 
 </style></head>
 <body>
@@ -39,7 +36,7 @@
 <header class="hero"><div class="hero-inner"><div class="eyebrow">COSTUME · HISTORY · ART · CRAFT · RESEARCH</div><h1>衣脉 · 中西服饰文化数据库</h1><div class="sub">Costume Culture Archive · East & West</div><p>汇聚中西服饰文献 · 图像 · 器物 · 艺术 · 研究。从中国历代衣冠到西方时尚史，从名画与影视中的服饰细节，到民族服饰、传统纹样、纺织工艺与当代新中式设计。</p><div class="actions"><a class="btn primary" href="#daily">今日服饰课</a><a class="btn" href="#archive">探索文化数据库</a></div></div></header>
 <nav class="nav"><a href="film-costume.html">影视服饰文化</a><a href="global-new-chinese.html">全球新中式设计</a><a href="global-designers.html">全球设计师档案</a><a href="people-research.html">人物与学术研究</a><a href="ethnic-costume.html">民族服饰图谱</a><a href="painting-costume.html">中西名画服饰库</a><a href="textile-patterns.html">纺织工艺与纹样库</a><a href="gender-costume.html">历代男女服饰</a><a href="china-history.html">历代服饰档案</a><a href="#daily">每日一课</a><a href="#china">中国服装史</a><a href="#west">西方服装史</a><a href="#compare">中西对照</a><a href="#art">名画与影视</a><a href="#ethnic">民族服饰</a><a href="#craft">纹样·色彩·工艺</a><a href="#newchinese">新中式设计</a><a href="#scholars">学者研究</a><a href="#news">行业动态</a></nav>
 <main>
-<section class="section" id="daily"><div class="section-head"><div><div class="kicker">DAILY COSTUME NOTE</div><h2>每日一课 · 今日服饰文化</h2></div><div class="desc" id="today">每日更新 · 按日期归档</div></div><div class="feature"><div class="daily-visual"><img id="daily-img" src="assets/tang-ruqun-illustration.jpg" alt="唐代襦裙服饰结构示意：上襦、高腰裙与披帛"><div id="daily-image-credit" class="daily-image-credit">图片说明：AI辅助生成的唐代襦裙视觉示意图，用于辅助观察服装层次与搭配；不是考古出土文物、博物馆藏品或历史照片。</div></div><div class="daily-article"><span class="tag">今日专题 · 唐代女性服饰</span><h3 id="daily-title">唐代襦裙：上襦、高腰裙与披帛的组合</h3><p id="daily-text">图中以唐代女性襦裙为主题，呈现短上襦、腰部较高的裙装和披帛的组合关系。上襦覆盖上身，裙腰位置较高，长裙向下形成连续的垂坠轮廓；披帛搭在肩臂之间，增加服装的层次与动态感。发髻和花饰则构成整体妆束的一部分。</p><p id="daily-detail">研究时应分别观察上襦的长度与领型、裙腰的固定位置、裙幅与褶量、披帛的搭挂方式，以及织物纹样和配色。唐代服饰并非一个固定样式，初唐、盛唐、中晚唐以及不同身份、场合之间均有变化。图像属于设计性示意，具体形制仍须与唐墓壁画、陶俑、织物实物和文献相互印证。</p><div class="meta" id="daily-meta">中国服饰史 · 唐代服饰专题 · 视觉示意</div></div></div></section>
+<section class="section" id="daily"><div class="section-head"><div><div class="kicker">DAILY COSTUME NOTE</div><h2>每日一课 · 今日服饰文化</h2></div><div class="desc" id="today">每日更新 · 按日期归档</div></div><div class="feature"><img id="daily-img" src="assets/ming-mamian-skirt.png" alt="明代马面裙结构示意图：马面裙门、两侧褶裥、裙腰与织绣装饰"><div id="daily-image-credit" class="daily-image-credit">图片说明：AI辅助生成的明代马面裙结构示意图，仅用于观察裙门、两侧褶裥、裙腰与装饰布局；不是明代出土实物或博物馆藏品。</div><div><span class="tag">今日专题</span><h3 id="daily-title">明代马面裙：结构、褶裥与装饰</h3><p id="daily-text">马面裙的结构观察可从裙门、两侧褶裥、裙腰和裙摆装饰入手。裙门是前后相对的平整裙幅区域，两侧褶裥提供围合与活动空间；不同年代、地域和身份的马面裙在裙门比例、褶裥形式、面料纹样及缘饰上存在差异。研究时应将传世实物、墓葬出土服饰、绘画图像与文献记录互相参照，不能把后世常见样式直接视为明代统一定制。</p><div class="meta" id="daily-meta">中国服装史 · 明代服饰结构专题</div></div></div></section>
 <section class="section" id="archive"><div class="section-head"><div><div class="kicker">CULTURE INDEX</div><h2>服饰文化资料库</h2></div><div class="desc">可按关键词检索专题、时期、工艺与视觉资料</div></div><div class="searchbar"><input id="search" placeholder="搜索：明制汉服、洛可可、云肩、缂丝、新中式……"><button onclick="doSearch()">检索资料</button></div><div class="pillrow"><span class="pill">中国服装史</span><span class="pill">西方服装史</span><span class="pill">服饰考据</span><span class="pill">艺术史</span><span class="pill">影视服装</span><span class="pill">民族服饰</span><span class="pill">传统纹样</span><span class="pill">染织工艺</span><span class="pill">新中式</span></div><div class="grid" id="archive-grid">
 <article class="card searchable"><img src="assets/ink-flower.png"><div class="card-body"><span class="tag">中国服装史</span><h3>先秦至秦汉：深衣与衣冠制度</h3><p>从上衣下裳到深衣形制，理解早期华夏服饰结构、礼制观念与审美秩序。</p><div class="meta">历史时期 · 先秦 / 秦汉</div><a class="smalllink" href="china-history.html#preqin" style="display:inline-block;margin-top:12px">进入专题 →</a></div></article>
 <article class="card searchable"><img src="assets/ink-flower.png"><div class="card-body"><span class="tag">中国服装史</span><h3>唐代：开放气象与多元审美</h3><p>襦裙、半臂、胡服及妆饰风尚，折射唐代城市生活、对外交流与女性审美。</p><div class="meta">历史时期 · 隋唐</div><a class="smalllink" href="china-history.html#suitang" style="display:inline-block;margin-top:12px">进入专题 →</a></div></article>
@@ -61,7 +58,7 @@
 <a class="card linked-card" href="film-costume.html"><img src="assets/ink-flow.png" alt="影视服装研究专题封面"><div class="card-body"><span class="tag">电影与电视剧</span><h3>影视服装：考据、叙事与美术设计</h3><p>按作品、年代、人物、服装造型、材料工艺和历史依据建立影视服装档案。</p><span class="card-more">进入影视服饰数据库 →</span></div></a>
 </div></section>
 <section class="section" id="ethnic"><div class="section-head"><div><div class="kicker">ETHNIC COSTUME ATLAS</div><h2>中国民族服饰 · 每日一族深度研究</h2></div><div class="desc">每个民族独立建档：地域、支系、结构、材料、纹样、工艺与实物证据</div></div><div class="grid">
-<a class="card linked-card" href="ethnic-miao.html"><img src="https://bwg.muc.edu.cn/__local/3/E0/A9/14732160DCCA60B606BDDCC077F_754C4BAC_528C5.jpg?e=.jpg" alt="贵州台江苗族镶银绣花衣馆藏实物"><div class="card-body"><span class="tag">第001期 · 已建立档案</span><h3>苗族服饰</h3><p>贵州台江馆藏实物切入，研究地域支系、衣襟结构、刺绣、银饰、裙装与节庆场景。</p><span class="card-more">进入苗族独立档案 →</span></div></a>
+<a class="card linked-card" href="ethnic-costume.html#daily" aria-label="进入苗族服饰第一期研究档案"><img src="https://bwg.muc.edu.cn/__local/3/E0/A9/14732160DCCA60B606BDDCC077F_754C4BAC_528C5.jpg?e=.jpg" alt="贵州台江苗族镶银绣花衣馆藏实物"><div class="card-body"><span class="tag">第001期 · 已建立档案</span><h3>苗族服饰</h3><p>贵州台江馆藏实物切入，研究地域支系、衣襟结构、刺绣、银饰、裙装与节庆场景。</p><span class="card-more">进入苗族独立档案 →</span></div></a>
 <a class="card linked-card" href="ethnic-tibetan.html"><img src="assets/ethnic-tibetan.svg" alt="藏族服饰专题封面"><div class="card-body"><span class="tag">第002期 · 专题档案</span><h3>藏族服饰</h3><p>区分卫藏、康、安多等地域，研究藏袍、氆氇、皮毛、邦典与季节穿着。</p><span class="card-more">进入藏族独立档案 →</span></div></a>
 <a class="card linked-card" href="ethnic-uyghur.html"><img src="assets/ethnic-uyghur.svg" alt="维吾尔族服饰专题封面"><div class="card-body"><span class="tag">第003期 · 专题档案</span><h3>维吾尔族服饰</h3><p>研究艾德莱斯绸、花帽、袷袢、刺绣及新疆不同绿洲地区的穿着差异。</p><span class="card-more">进入维吾尔族独立档案 →</span></div></a>
 <a class="card linked-card" href="ethnic-kazakh.html"><img src="assets/ethnic-tibetan.svg" alt="哈萨克族服饰专题封面"><div class="card-body"><span class="tag">第004期 · 专题档案</span><h3>哈萨克族服饰</h3><p>从游牧生活、毛皮材料、长袍、头饰、刺绣与季节性服装展开研究。</p><span class="card-more">进入哈萨克族独立档案 →</span></div></a>
@@ -86,27 +83,42 @@
 <section class="section" id="scholars">
 <div class="section-head"><div><div class="kicker">RESEARCH & SCHOLARSHIP</div><h2>学者观点 · 研究成果</h2></div><div class="desc">以论文、博物馆研究、考古报告和学术著作为依据</div></div>
 <div class="grid two">
-<a class="card-body scholar-link" href="people-research.html"><span class="tag">研究方法</span><h3>服饰史研究如何建立证据链？</h3><p>将传世服装、墓葬出土纺织品、壁画、绘画、文献记载和工艺实验相互印证。每条结论标注作者、出处、年代、研究对象与证据类型，不把网络流行说法当作学术定论。</p><span class="card-more">进入研究方法专题 →</span></a>
-<a class="card-body scholar-link" href="people-research.html"><span class="tag">学术资料入口</span><h3>持续追踪学者与机构研究</h3><p>重点关注服装史、纺织考古、博物馆学、非遗保护、艺术史与设计史领域的学者和研究机构。</p><span class="card-more">进入学者与机构档案 →</span></a>
+<a class="card-body scholar-link" href="people-research.html#scholar-method" aria-label="进入中国古代服饰史研究学者档案">
+<span class="tag">研究方法</span><h3>服饰史研究如何建立证据链？</h3>
+<p>查看沈从文、孙机、周锡保等研究者的代表著作、实物与文献互证方法，以及服饰史研究如何建立证据链。</p>
+<span class="card-more">进入古代服饰史学者档案 →</span></a>
+<a class="card-body scholar-link" href="people-research.html#designer-research" aria-label="进入当代服装设计师与研究机构档案">
+<span class="tag">学术资料入口</span><h3>持续追踪学者与机构研究</h3>
+<p>查看当代服装设计师、影视服装创作者及相关研究机构的代表作品、研究方向与公开资料。</p>
+<span class="card-more">进入人物与机构研究档案 →</span></a>
 </div></section>
 <section class="section" id="news"><div class="section-head"><div><div class="kicker">LATEST UPDATES</div><h2>中国传统服饰与全球时尚动态</h2></div><div class="desc">自动抓取公开资讯标题；重要内容需回到原文核验</div></div><div class="news-list" id="news-list"><div class="empty">首次部署后，GitHub Actions 将定时生成资讯列表。这里也会保留专题档案与来源链接。</div></div></section>
 <section class="section"><div class="section-head"><div><div class="kicker">REFERENCE DESK</div><h2>权威资料与馆藏入口</h2></div></div><div class="sources"><p><a href="https://www.metmuseum.org/art/collection" target="_blank">The Metropolitan Museum of Art 大都会艺术博物馆馆藏</a>　·　<a href="https://www.vam.ac.uk/collections/fashion" target="_blank">V&A 维多利亚与艾尔伯特博物馆时尚馆藏</a></p><p><a href="https://www.europeana.eu/" target="_blank">Europeana 欧洲数字文化遗产平台</a>　·　<a href="https://www.si.edu/collections" target="_blank">Smithsonian Institution 史密森学会馆藏</a></p><p><a href="https://www.dpm.org.cn/" target="_blank">故宫博物院</a>　·　<a href="https://www.chnmuseum.cn/" target="_blank">中国国家博物馆</a>　·　<a href="https://www.ihchina.cn/" target="_blank">中国非物质文化遗产网</a></p><p>说明：网站中的示例图为视觉占位素材，不代表对应历史服饰的考古复原或馆藏实物。正式研究条目应替换为可核验的博物馆藏品图、授权图片或明确标注来源的历史图像。</p></div></section>
 </main><footer><div style="font-size:20px;letter-spacing:4px">衣脉 · 中西服饰文化数据库</div><div>让服饰成为理解历史、艺术、技术与社会生活的一把钥匙。</div><div>个人研究与学习资料库 · 持续更新 · 尊重史料与版权</div></footer>
 <script>
-const lessons=[
-{title:'唐代襦裙：上襦、高腰裙与披帛的组合',text:'图中以唐代女性襦裙为主题，呈现短上襦、腰部较高的裙装和披帛的组合关系。上襦覆盖上身，裙腰位置较高，长裙向下形成连续的垂坠轮廓；披帛搭在肩臂之间，增加服装的层次与动态感。发髻和花饰则构成整体妆束的一部分。',detail:'研究时应分别观察上襦的长度与领型、裙腰的固定位置、裙幅与褶量、披帛的搭挂方式，以及织物纹样和配色。唐代服饰并非一个固定样式，初唐、盛唐、中晚唐以及不同身份、场合之间均有变化。图像属于设计性示意，具体形制仍须与唐墓壁画、陶俑、织物实物和文献相互印证。',category:'中国服饰史 · 唐代服饰专题 · 视觉示意',img:'assets/tang-ruqun-illustration.jpg'}];
-const lesson=lessons[0];
+const lesson={title:'明代马面裙：结构、褶裥与装饰',text:'马面裙的结构观察可从裙门、两侧褶裥、裙腰和裙摆装饰入手。裙门是前后相对的平整裙幅区域，两侧褶裥提供围合与活动空间；不同年代、地域和身份的马面裙在裙门比例、褶裥形式、面料纹样及缘饰上存在差异。研究时应将传世实物、墓葬出土服饰、绘画图像与文献记录互相参照，不能把后世常见样式直接视为明代统一定制。',category:'中国服装史 · 明代服饰结构专题',img:'assets/ming-mamian-skirt.png'};
 document.getElementById('daily-title').textContent=lesson.title;
 document.getElementById('daily-text').textContent=lesson.text;
-document.getElementById('daily-detail').textContent=lesson.detail;
 document.getElementById('daily-meta').textContent=lesson.category;
 document.getElementById('daily-img').src=lesson.img;
-document.getElementById('daily-img').alt='唐代襦裙服饰结构示意：上襦、高腰裙与披帛；AI辅助生成的设计性示意图';
+document.getElementById('daily-img').alt='明代马面裙结构示意图：裙门、两侧褶裥、裙腰与织绣装饰';
 document.getElementById('today').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'})+' · 今日专题';
 function doSearch(){const q=document.getElementById('search').value.trim().toLowerCase();let n=0;document.querySelectorAll('.searchable').forEach(c=>{const ok=!q||c.innerText.toLowerCase().includes(q);c.style.display=ok?'':'none';if(ok)n++});document.getElementById('search-status').textContent=q?'检索到 '+n+' 条匹配的入门专题。':'显示全部专题。'}
 document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch()});
 fetch('data/news.json').then(r=>r.ok?r.json():[]).then(items=>{const box=document.getElementById('news-list');if(!items.length)return;box.innerHTML=items.slice(0,12).map(x=>`<article class="news"><small>${x.source||'公开资讯'} · ${x.date||''}</small><h3><a href="${x.link}" target="_blank" rel="noopener">${x.title}</a></h3><p>${x.summary||'点击原文查看详情。'}</p></article>`).join('')}).catch(()=>{});
 </script>
-
+<script id="YIMAI_DAILY_IMAGE_FALLBACK">
+document.addEventListener('DOMContentLoaded',function(){
+ const img=document.getElementById('daily-img');
+ if(!img)return;
+ img.addEventListener('error',function(){
+   img.style.display='none';
+   const note=document.createElement('div');
+   note.style.cssText='min-height:280px;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;background:#eee9df;color:#5d584f;font-size:13px;line-height:2';
+   note.innerHTML='马面裙专题示意图暂时无法加载，请检查 assets/ming-mamian-skirt.png 是否已上传。';
+   img.parentNode.insertBefore(note,img.nextSibling);
+ });
+});
+</script>
 
 </body></html>
